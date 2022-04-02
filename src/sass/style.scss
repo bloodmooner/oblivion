@@ -4,11 +4,17 @@
 @import 'base/animations';
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 /*
-font-family: 'Roboto', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+font-family: 'Gotham Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+Gotham Pro: 300, 400
+Montserrat: 400, 500, 700
+Gilroy: 400
+Roboto: 400
+
 */
 
 *, *:before, *:after {
@@ -19,7 +25,7 @@ font-family: 'Ubuntu', sans-serif;
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Gotham Pro', sans-serif;
 }
 
 ul, ol {
