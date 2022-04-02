@@ -42,7 +42,7 @@ section, header, footer {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -53,15 +53,15 @@ section, header, footer {
   }
   @include for-tablet-landscape-up {
     max-width: 100%;
-    padding: 0 30px;
+    padding: 0 45px;
   }
   @include for-tablet-portrait-up {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 36px;
   }
   @include for-phone-only {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 16px;
   }
 }
 
@@ -76,107 +76,3 @@ button::-moz-focus-inner {
 
 
 
-.header {
-}
-.header__wrapper {
-  margin-top: 28px;
-}
-.container {
-}
-.row {
-}
-.col-sm {
-}
-.header__logo {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 52px;
-  text-transform: uppercase;
-  color: #7338F6;
-}
-.header__action {
-
-  border-width: 4px;
-  border-style: solid;
-  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-
-  display: block;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  color: linear-gradient(268.81deg, #55AEEF -3.14%, #7C46F8 99.49%);
-  text-transform: uppercase;
-}
-.main {
-  margin-top: 65px;
-}
-.main__wrapper {
-}
-.main__bg {
-  width: 100%;
-}
-.main__title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
-  color: #0E0C20;
-}
-.main__form {
-  margin-top: 40px;
-}
-.form-group {
-}
-.form-control {
-}
-.main__check {
-  margin-top: 32px;
-}
-.main__form-control {
-  border: none;
-  padding: 8px 16px 16px 0;
-  border-bottom: 1px solid #E7E7E7;;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #A5A3A4;
-}
-.form-check-input {
-}
-.form-check-label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #0E0C20;
-}
-.form-check-label a {
-  text-decoration: underline;
-  color: #6542F3;
-}
-.btn {
-}
-.btn-primary {
-}
-.main__btn {
-  margin-top: 32px;
-  background: linear-gradient(180deg, #7C45F8 0%, #746FFA 79.33%, #6D90FB 100%);
-  border-radius: 8px;
-  width: 150px;
-  height: 56px;
-}
-.main__btn span {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  opacity: 0.5;
-}
