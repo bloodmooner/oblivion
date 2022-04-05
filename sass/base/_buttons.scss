@@ -1,0 +1,48 @@
+.btn{
+    &__banner{
+        width: 205px;
+        height: 50px;
+        background: transparent;        
+        border: 1px solid #FFFFFF;
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    &__products{
+        
+        &_info{
+            border: 1px solid #CF8BA1;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            color: #CF8BA1;
+            background: transparent;
+            padding: 15px 16px;
+            margin-right: 11px;
+            &:hover{
+                text-decoration: none;
+                color: #CF8BA1;
+            }
+
+        }
+        &_cart{
+            background: #CF8BA1;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 13px;
+            color: #ffffff;
+            padding: 15px 16px;
+            &:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+
+    }
+} 
