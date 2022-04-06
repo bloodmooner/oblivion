@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 41px;
+}
+.sidebar{    
+    &__categories{
+        width: 278px;
+        height: auto;
+        border: 1px solid #E8E8E8;
+        li{
+            list-style: none;
+            border-bottom: 1px solid #E8E8E8;
+            padding: 19px 16px;
+            a{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 15px;                
+                color: #000000;
+                &:hover{
+                    text-decoration: none;
+                } 
+            }
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+    }
+}
