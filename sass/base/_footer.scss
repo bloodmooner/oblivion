@@ -1,0 +1,116 @@
+.footer {
+    background: #CF8BA1;
+    &__wrapper {
+        padding: 38px 0 25px 0;
+        display: flex;
+    }
+
+    &__logo-link {
+    }
+
+    &__logo-icon {
+    }
+
+    &__nav {
+        margin-left: 46px;
+        margin-top: 16px;
+        max-width: 636px;
+        width: 100%;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+
+    &__links {
+        margin-top: 17px;
+        margin-left: 60px;
+        max-width: 356px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__contact {
+    }
+
+    &__title {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+
+    &__contact-tel {
+        display: block;
+        margin-top: 11px;
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+
+    &__socials {
+        
+    }
+
+    &__socials-list {
+        margin-top: 11px;
+        list-style-type: none;
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__socials-item {
+        
+    }
+
+    &__socials-link {
+    }
+
+    &__socials-icon {
+    }
+
+    &__copyright {
+        border-top: 1px solid #FFFFFF;
+    }
+
+    &__copyright-content {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    &__copyright-text {
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        
+    }
+}
