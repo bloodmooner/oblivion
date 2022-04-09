@@ -1505,6 +1505,113 @@ Gotham Pro
   right: 30px;
 }
 
+.header-search {
+  -webkit-transition: all .34s linear;
+  transition: all .34s linear;
+  background: #CF8BA1;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  opacity: 0;
+  overflow-y: scroll;
+}
+
+.header-search__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header-search__close {
+  position: unset !important;
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-search__close img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-search_active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.header-search__close {
+  position: absolute;
+  right: 30px;
+}
+
+.header-search__row {
+  position: relative;
+  width: 100%;
+  height: 45px;
+}
+
+.header-search__icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header-search__input {
+  padding: 16px 51px 16px 51px;
+  width: 100%;
+  height: 45px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 14px;
+  color: #4F4F4F;
+  border: none;
+}
+
+.header-search__close-btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .footer {
   background: #CF8BA1;
 }
