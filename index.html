@@ -15,6 +15,14 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
+        <div class="header__controls">
+          <span class="header__controls-menu">
+            <img class="header__controls-icon" src="assets/svg/bmenu.svg" alt="" width="33" height="24" >
+          </span>
+          <span class="header__controls-search">
+            <img class="header__controls-icon" src="assets/svg/bsearch.svg" alt="" width="25" height="24" >
+          </span>
+        </div>
         <a class="header__logo" href="#" >
           <img class="header__logo-icon" src="assets/svg/Oblivion.svg" alt="logo" width="102" height="42">
         </a>
@@ -29,18 +37,18 @@
             </span>
           </div>
           <div class="header__actions">
-            <div class="header__actions-item header__actions-item_fav">
-              <img class="header__actions-icon" src="assets/svg/fav.svg" alt="favourite" >
+            <a class="header__actions-item header__actions-item_fav" href="#">
+              <img class="header__actions-icon header__actions-icon_fav" src="assets/svg/fav.svg" alt="favourite" width="28" height="25">
               <div class="header__actions-counter">
                 <span>1</span>
               </div>
-            </div>
-            <div class="header__actions-item header__actions-item_cart">
-              <img class="header__actions-icon" src="assets/svg/cart.svg" alt="favourite" >
+            </a>
+            <a class="header__actions-item header__actions-item_cart" href="#">
+              <img class="header__actions-icon header__actions-icon_cart" src="assets/svg/cart.svg" alt="favourite" width="20" height="26">
               <div class="header__actions-counter">
                 <span>3</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         
@@ -406,6 +414,9 @@
         </a>
         <nav class="footer__nav">
           <ul class="footer__list">
+            <li class="footer__item footer__item_header">
+              Меню: 
+            </li>
             <li class="footer__item">
               <a href="" class="footer__link">
                 Главная
