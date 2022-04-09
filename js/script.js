@@ -42,5 +42,35 @@ $(document).ready(function(){
 
     // Mobile Search END
 
+
+    $('.related__wrapper').slick({
+        slidesToShow: 4,
+        arrows: true,
+        nextArrow: $(document).find('.related__arrow_left'),
+        prevArrow: $(document).find('.related__arrow_right'),
+        responsive: [
+          {
+            breakpoint: 1099,
+            settings: {
+              slidesToShow: 1,
+              dots: false,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 599,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
 });
 
