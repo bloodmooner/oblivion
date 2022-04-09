@@ -596,6 +596,221 @@ Gotham Pro
   display: flex;
 }
 
+.header__wrapper {
+  padding: 6px 0 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: space-between; */
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header__info {
+  margin-left: 53px;
+  max-width: 827px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__tel {
+  margin-top: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1D1D1D;
+}
+
+.header__shedule {
+  margin-top: 22px;
+  max-width: 258px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1D1D1D;
+}
+
+.header__delivery {
+  margin-top: 22px;
+  max-width: 222px;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1D1D1D;
+}
+
+.header__actions {
+  margin-top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__actions-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__actions-item span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.header__actions-item_fav .header__actions-counter {
+  right: -3px;
+}
+
+.header__actions-item_cart {
+  margin-left: 39px;
+  margin-right: 9px;
+}
+
+.header__actions-item_cart .header__actions-counter {
+  right: -11px;
+}
+
+.header__actions-counter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  background: #CF8BA1;
+}
+
+.header__menu {
+  background: #CF8BA1;
+}
+
+.header__menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 21px 0 16px 0;
+}
+
+.header__nav {
+  max-width: 847px;
+  width: 100%;
+  margin-right: 90px;
+}
+
+.header__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.header__search-row {
+  position: relative;
+  width: 263px;
+}
+
+.header__search-input {
+  width: 100%;
+  font-family: 'Montserrat';
+  padding: 0 26px 5px 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.header__search-input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.header__search-input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.header__search-input::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.header__search-input::placeholder {
+  color: #FFFFFF;
+}
+
+.header__search-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /*
 font-family: 'Gotham Pro', sans-serif;
 font-family: 'Montserrat', sans-serif;
