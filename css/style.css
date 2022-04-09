@@ -769,6 +769,10 @@ Gotham Pro
   color: #FFFFFF;
 }
 
+.header__link:hover {
+  color: #FFFFFF;
+}
+
 .header__search-row {
   position: relative;
   width: 263px;

@@ -144,7 +144,9 @@
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
-  
+      &:hover {
+        color: #FFFFFF;
+      }
     }
   
     &__search {
