@@ -188,76 +188,171 @@
 
     <!-- Main Start -->
     <main>
-      <!-- Product Start -->
-      
-      <section class="section" id="item">
+      <!-- Cart Start -->
+      <section class="section" id="cart">
         <div class="container">
-        <h1 class="item__title">Бабочка №2</h1>
-          <div class="item__wrapper">
-            <div class="item__image">
-                <img class="item__image-src" src="assets/img/item.jpg" alt="" width="512" height="395" >
-                <button class="item__image-btn">
-                    <img class="item__image-icon" src="assets/svg/item-fav.svg" alt="" width="25" height="23">
-                </button>
-            </div>
-            <div class="item__info">
-              
-              <ul class="item__descr">
-                <li class="item__descr-item">
-                  <span class="item__descr-name">Тип</span>
-                  <span class="item__descr-caption">Бабочка сублимация ткань</span>
-                </li>
-                <li class="item__descr-item">
-                  <span class="item__descr-name">Размер</span>
-                  <span class="item__descr-caption">50 мм х 55 мм</span>
-                </li>
-              </ul>
-  
+        
 
-              <div class="item__bottom">
-                <div class="item__price-container">
-                    <span class="item__price-number">15 руб</span>
-                    <span class="item__price-count">1 шт</span>
-                </div>
-  
-                <div class="item__actions">
-                    <div class="item__quant">
-                        <button class="item__quant-minus">
-                          <img class="item__quant-icon item__quant-icon_minus" src="assets/svg/quant-minus.svg" alt="" >
-                        </button>
-                        <input class="item__quant-input" type="text"  placeholder="1">
-                        <button class="item__quant-plus">
-                          <img class="item__quant-icon item__quant-icon_plus" src="assets/svg/quant-plus.svg" alt="" >
-                        </button>
+        <div class="cart__table">
+            <div class="cart__item cart__header">
+                <h2 class="cart__title">Ваш заказ</h2>
+                <div class="cart__body-container">
+                    <div class="cart__body">
+                        <span class="cart__subtitle">Цена</span>
+                        <span class="cart__subtitle">Количество</span>
+                        <span class="cart__subtitle cart__subtitle_amount">Сумма</span>
                     </div>
-                    <a class="item__order" href="#" >В корзину</a>
                 </div>
-              </div>
+                
+            </div>
+           
+                        
+                
+            <div class="cart__item">
+                
+                <div class="cart__descr">
+                    <div class="cart__image">
+                        <img class="cart__image-scr" src="assets/img/item.jpg" alt="" >
+                        <button class="cart__image-btn">
+                            <img class="cart__image-icon" src="assets//svg/item-fav.svg" alt="" width="17" height="15" >
+                        </button>
+                        </div>
+                        <div class="cart__caption">
+                            <h3 class="cart__name">
+                                Бабочка №2
+                            </h3>
+                            <ul class="cart__list">
+                                <li class="cart__listitem">
+                                    <span class="cart__listitem-key">Тип</span>
+                                    <span class="cart__listitem-value">Бабочка сублимация ткань</span>
+                                </li>
+                                <li class="cart__listitem">
+                                    <span class="cart__listitem-key">Размер</span>
+                                    <span class="cart__listitem-value">50 мм х 55 мм</span>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+               
+                <div class="cart__body-container">
+                    <div class="cart__body">
+                        <div class="cart__price">
+                            <span class="cart__newprice">89 руб./шт.</span>
+                            <span class="cart__oldprice">159 руб./шт.</span>
+                        </div>
+                   
+                        <div class="cart__quant">
+                            <div class="cart__quant-container">
+                                <button class="cart__quant-minus">
+                                    <img class="cart__quant-icon cart__quant-icon_minus" src="assets/svg/quant-minus.svg" alt="" >
+                                  </button>
+                                  <input class="cart__quant-input" type="text"  placeholder="1">
+                                  <button class="cart__quant-plus">
+                                    <img class="cart__quant-icon cart__quant-icon_plus" src="assets/svg/quant-plus.svg" alt="" >
+                                  </button>
+                            </div>
+                            
+                        </div>
+                   
+                        <div class="cart__amount">
+                            <span class="cart__amount-num">
+                                178 руб
+                            </span>
+                            <div class="cart__remove-container">
+                                <a class="cart__remove-btn" href="#" >Удалить товар</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+            </div>
 
-              
-  
+            <div class="cart__item">
+                
+                <div class="cart__descr">
+                    <div class="cart__image">
+                        <img class="cart__image-scr" src="assets/img/item.jpg" alt="" >
+                        <button class="cart__image-btn">
+                            <img class="cart__image-icon" src="assets//svg/item-fav.svg" alt="" width="17" height="15" >
+                        </button>
+                        </div>
+                        <div class="cart__caption">
+                            <h3 class="cart__name">
+                                Бабочка №2
+                            </h3>
+                            <ul class="cart__list">
+                                <li class="cart__listitem">
+                                    <span class="cart__listitem-key">Тип</span>
+                                    <span class="cart__listitem-value">Бабочка сублимация ткань</span>
+                                </li>
+                                <li class="cart__listitem">
+                                    <span class="cart__listitem-key">Размер</span>
+                                    <span class="cart__listitem-value">50 мм х 55 мм</span>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+               
+                <div class="cart__body-container">
+                    <div class="cart__body">
+                        <div class="cart__price">
+                            <span class="cart__newprice">89 руб./шт.</span>
+                            <span class="cart__oldprice">159 руб./шт.</span>
+                        </div>
+                   
+                        <div class="cart__quant">
+                            <div class="cart__quant-container">
+                                <button class="cart__quant-minus">
+                                    <img class="cart__quant-icon cart__quant-icon_minus" src="assets/svg/quant-minus.svg" alt="" >
+                                  </button>
+                                  <input class="cart__quant-input" type="text"  placeholder="1">
+                                  <button class="cart__quant-plus">
+                                    <img class="cart__quant-icon cart__quant-icon_plus" src="assets/svg/quant-plus.svg" alt="" >
+                                  </button>
+                            </div>
+                            
+                        </div>
+                   
+                        <div class="cart__amount">
+                            <span class="cart__amount-num">
+                                178 руб
+                            </span>
+                            <div class="cart__remove-container">
+                                <a class="cart__remove-btn" href="#" >Удалить товар</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
             </div>
-          </div>
-  
-          <div class="item__description">
-  
-            <h3 class="item__description-title">Описание</h3>
-            <div class="item__description-text">
-              <p>
-                Бабочка имеют плотную, но довольно лёгкую текстуру. Легко вырезаются ножничками и не требуют дальнейшего обпаливания. При производстве используется влагостойкая ткань и качественные чернила, поэтому данному изделию не страшны попадания воды.
-              </p>
+
+           
+            
+        </div>
+
+
+        <div class="amount">
+            <div class="amount__container">
+            <div class="amount__wrapper">
+                <span class="amount__num">Итого: <span class="amount__sum">356 руб</span></span>
+                <a class="amount__btn" href="#">Оформить заказ</a>
             </div>
-          </div>
+            </div>
+            
+        </div>
+          
+          
         </div>
       </section>
-
-      <!-- Product End -->
+      <!-- Cart End -->
 
 
 
       <!-- Related Start -->
 
-      <section class="related">
+      <section class="related related_cart">
         <div class="related__content">
           <div class="title related__title">
             <h2 class="title__content">Сопутствующие товары</h2>
