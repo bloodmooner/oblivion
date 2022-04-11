@@ -46,8 +46,10 @@ $(document).ready(function(){
     $('.related__wrapper').slick({
         slidesToShow: 4,
         arrows: true,
-        nextArrow: $(document).find('.related__arrow_left'),
-        prevArrow: $(document).find('.related__arrow_right'),
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: $(document).find('.related__arrow_right'),
+        prevArrow: $(document).find('.related__arrow_left'),
         responsive: [
             {
                 breakpoint: 1291,

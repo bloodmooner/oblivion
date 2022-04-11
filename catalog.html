@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин фурнитуры Oblivion</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__controls">
+          <span class="header__controls-menu burger">
+            <img class="header__controls-icon" src="assets/svg/bmenu.svg" alt="" width="33" height="24" >
+          </span>
+          <span class="header__controls-search search">
+            <img class="header__controls-icon" src="assets/svg/bsearch.svg" alt="" width="25" height="24" >
+          </span>
+        </div>
+        <a class="header__logo" href="#" >
+          <img class="header__logo-icon" src="assets/svg/Oblivion.svg" alt="logo" width="102" height="42">
+        </a>
+        <div class="header__content">
+          <div class="header__info">
+            <a href="tel:+79682676814" class="header__tel">+7 968 267 68 14</a>
+            <span class="header__shedule">
+              График работы интернет-магазина: Пн-Пт с 8:00 до 17:00
+            </span>
+            <span class="header__delivery">
+              Доставка по всей России и в некоторые страны СНГ
+            </span>
+          </div>
+          <div class="header__actions">
+            <a class="header__actions-item header__actions-item_fav" href="#">
+              <img class="header__actions-icon header__actions-icon_fav" src="assets/svg/fav.svg" alt="favourite" width="28" height="25">
+              <div class="header__actions-counter">
+                <span>1</span>
+              </div>
+            </a>
+            <a class="header__actions-item header__actions-item_cart" href="#">
+              <img class="header__actions-icon header__actions-icon_cart" src="assets/svg/cart.svg" alt="favourite" width="20" height="26">
+              <div class="header__actions-counter">
+                <span>3</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="header-mobile">
+        <div class="header-mobile__top">
+          <div class="header-mobile__close">
+            <img class="header-mobile__close-image" alt="test" src="assets/svg/bclose.svg" width="19" height="19"></div>
+        </div>
+        <div class="header-mobile__wrapper">
+          <nav class="header-mobile__nav">
+            <ul class="header-mobile__list">
+              <li class="header-mobile__item header-mobile__item_header">
+                Меню: 
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  Главная
+                </a>
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  О нас
+                </a>
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  Каталог
+                </a>
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  Оплата
+                </a>
+              </li>
+              <li class="header-mobile__item">
+                <a href="" class="header-mobile__link">
+                  График работы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-mobile__links">
+            <div class="header-mobile__contact">
+              <span class="header-mobile__title">Телефон для связи:</span>
+              <a class="header-mobile__contact-tel" href="tel:+79682676814">
+                +7 968 267 68 14
+              </a>
+            </div>
+            <div class="header-mobile__contact header-mobile__contact_days">
+              <span class="header-mobile__title">График работы:</span>
+              <span class="header-mobile__contact-days">
+                Пн - Пт с 8:00 до 17:00
+              </span>
+            </div>
+            <div class="header-mobile__socials">
+              <span class="header-mobile__title">Мы в соц. сетях:</span>
+              <ul class="header-mobile__socials-list">
+                <li class="header-mobile__socials-item">
+                  <a class="header-mobile__socials-link" href="#" >
+                    <img class="header-mobile__socials-icon" src="assets/svg/insta.svg" alt="" width="24" height="24">
+                  </a>
+                </li>
+                <li class="header-mobile__socials-item">
+                  <a class="header-mobile__socials-link" href="#" >
+                    <img class="header-mobile__socials-icon" src="assets/svg/ok.svg" alt="" width="24" height="23">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header-search">
+        <div class="header-search__top">
+          <div class="header-search__row">
+            <img class="header-search__icon" src="assets/svg/bsearch.svg" alt="" >
+            <input  class="header-search__input" type="text" placeholder="Поиск по сайту">
+            <img class="header-search__close-btn" src="assets/svg/bsearchb.svg" alt="" >
+          </div>
+        </div>
+        
+        
+      </div>
+
+
+    </div>
+      <div class="header__menu">
+        <div class="container">
+          <div class="header__menu-wrapper">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >Главная</a>
+                </li>
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >О нас</a>
+                </li>
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >Каталог</a>
+                </li>
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >Доставка</a>
+                </li>
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >Оплата</a>
+                </li>
+                <li class="header__listitem">
+                  <a class="header__link" href="#" >График работы</a>
+                </li>
+              </ul>
+            </nav>
+            <form action="#" class="header__search">
+              <div class="header__search-row">
+                <input class="header__search-input" type="text" placeholder="Поиск по сайту">
+                <img class="header__search-icon" src="assets/svg/input-search.svg" alt="Search" >
+              </div>
+            </form>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+  </header>
+  <!-- Header End -->
+
+    <div class="wrapper">
+
+        <!-- Main Start -->
+        <main>
+            <!-- Catalog Start -->
+            <section class="section" id="catalog">
+                <div class="container">
+                    <h1 class="catalog__title">Каталог товаров для рукоделия</h1>
+                    <div class="catalog__wrapper">
+                        <ul>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Ленты"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Ленты</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Патчи сборные на фетре"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Патчи сборные на фетре</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Кож.зам"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Кож.зам</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Замша двухсторонняя"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Замша двухсторонняя</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Заготовка для бантов"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Заготовка для бантов</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Фоамиран"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Фоамиран</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Фетр"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Фетр</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Ободки, повязки, резинки"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Ободки, повязки, резинки</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Бусины, полубусины"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Бусины, полубусины</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Декоративные элементы"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Декоративные элементы</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Стразы ювелирные"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Стразы ювелирные</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Вырубка наше производство, фоамиран"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Вырубка наше производство, фоамиран</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Вырубка наше производство, фетр"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Вырубка наше производство, фетр</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Фатин"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Фатин</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Шнуры, тесьма, кружево"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Шнуры, тесьма, кружево</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Разное нужное"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Разное нужное</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Фурнитура, основы"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Фурнитура, основы</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Кабошон, фишка, фотопечать"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Кабошон, фишка, фотопечать</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Мыльные цветы и коробки"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Мыльные цветы и коробки</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Печатная продукция"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Печатная продукция</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Локоны"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Локоны</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Бутоньерки, тычины, ягоды"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Бутоньерки, тычины, ягоды</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Флористика"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Флористика</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Шаблон для банта"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Шаблон для банта</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Ткани разные"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Ткани разные</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Инструменты"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Инструменты</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Пенопласт"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Пенопласт</a></h2>
+                            </li>
+                            <li class="catalog__item">
+                                    <a href="#"><img src="assets/img/item.jpg" alt="Упаковка"></a>
+                                    <h2 class="catalog__item_title"><a href="#">Упаковка</a></h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Catalog End -->
+
+            <!-- Related Start -->
+
+            <section class="related">
+                <div class="related__content">
+                    <div class="title related__title">
+                        <h2 class="title__content">Акционные товары</h2>
+                    </div>
+                    <div class="related__container">
+                        <div class="related__wrapper">
+                        <div class="related__slide">
+                            <div class="related__item">
+                                <div class="related__img">
+                                    <img class="related__img-src" src="assets/img/item.jpg" alt="Leader 1" >
+                                    <button class="related__img-btn">
+                                        <img class="related__img-icon" src="assets/svg/item-fav.svg" alt="" width="22" height="20">
+                                    </button>
+                                </div>
+                            
+                            <div class="related__caption">
+                                <h3 class="related__name">Лента кружевная №1</h3>
+
+                                <div class="related__price">
+                                    <span class="related__price-new">89 руб.</span>
+                                    <span class="related__price-old">159 руб.</span>
+                                </div>
+                                
+                                <div class="related__btns">
+                                <a class="related__more" href="#" >Подробнее</a>
+                                <a class="related__cart" href="#" >В корзину</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="related__slide">
+                            <div class="related__item">
+                                <div class="related__img">
+                                    <img class="related__img-src" src="assets/img/item.jpg" alt="Leader 1" >
+                                    <button class="related__img-btn">
+                                        <img class="related__img-icon" src="assets/svg/item-fav.svg" alt="" width="22" height="20">
+                                    </button>
+                                </div>
+                            
+                            <div class="related__caption">
+                                <h3 class="related__name">Лента кружевная №1</h3>
+
+                                <div class="related__price">
+                                    <span class="related__price-new">89 руб.</span>
+                                    <span class="related__price-old">159 руб.</span>
+                                </div>
+                                
+                                <div class="related__btns">
+                                <a class="related__more" href="#" >Подробнее</a>
+                                <a class="related__cart" href="#" >В корзину</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="related__slide">
+                            <div class="related__item">
+                                <div class="related__img">
+                                    <img class="related__img-src" src="assets/img/item.jpg" alt="Leader 1" >
+                                    <button class="related__img-btn">
+                                        <img class="related__img-icon" src="assets/svg/item-fav.svg" alt="" width="22" height="20">
+                                    </button>
+                                </div>
+                            
+                            <div class="related__caption">
+                                <h3 class="related__name">Лента кружевная №1</h3>
+
+                                <div class="related__price">
+                                    <span class="related__price-new">89 руб.</span>
+                                    <span class="related__price-old">159 руб.</span>
+                                </div>
+                                
+                                <div class="related__btns">
+                                <a class="related__more" href="#" >Подробнее</a>
+                                <a class="related__cart" href="#" >В корзину</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="related__slide">
+                            <div class="related__item">
+                                <div class="related__img">
+                                    <img class="related__img-src" src="assets/img/item.jpg" alt="Leader 1" >
+                                    <button class="related__img-btn">
+                                        <img class="related__img-icon" src="assets/svg/item-fav.svg" alt="" width="22" height="20">
+                                    </button>
+                                </div>
+                            
+                            <div class="related__caption">
+                                <h3 class="related__name">Лента кружевная №1</h3>
+
+                                <div class="related__price">
+                                    <span class="related__price-new">89 руб.</span>
+                                    <span class="related__price-old">159 руб.</span>
+                                </div>
+                                
+                                <div class="related__btns">
+                                <a class="related__more" href="#" >Подробнее</a>
+                                <a class="related__cart" href="#" >В корзину</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="related__slide">
+                            <div class="related__item">
+                                <div class="related__img">
+                                    <img class="related__img-src" src="assets/img/item.jpg" alt="Leader 1" >
+                                    <button class="related__img-btn">
+                                        <img class="related__img-icon" src="assets/svg/item-fav.svg" alt="" width="22" height="20">
+                                    </button>
+                                </div>
+                            
+                            <div class="related__caption">
+                                <h3 class="related__name">Лента кружевная №1</h3>
+
+                                <div class="related__price">
+                                    <span class="related__price-new">89 руб.</span>
+                                    <span class="related__price-old">159 руб.</span>
+                                </div>
+                                
+                                <div class="related__btns">
+                                <a class="related__more" href="#" >Подробнее</a>
+                                <a class="related__cart" href="#" >В корзину</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        </div>
+                        <img class="related__arrow_left" src="assets/svg/item-slider-left.svg" alt="" width="40" height="40" >
+                        <img class="related__arrow_right" src="assets/svg/item-slider-right.svg" alt="" width="40" height="40">
+                    </div>
+        
+                </div>
+            </section>
+
+        <!-- Related End -->
+
+        </main>
+        <!-- Main End -->
+
+    </div>
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+        <a class="footer__logo-link" href="#" >
+            <img class="footer__logo-icon" src="assets/svg/Oblivion-footer.svg" alt="" width="102" height="42">
+        </a>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+            <li class="footer__item footer__item_header">
+                Меню: 
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                Главная
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                О нас
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                Каталог
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                Доставка
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                Оплата
+                </a>
+            </li>
+            <li class="footer__item">
+                <a href="" class="footer__link">
+                График работы
+                </a>
+            </li>
+            </ul>
+        </nav>
+        <div class="footer__links">
+            <div class="footer__contact">
+            <span class="footer__title">Телефон для связи:</span>
+            <a class="footer__contact-tel" href="tel:+79682676814">
+                +7 968 267 68 14
+            </a>
+            </div>
+            <div class="footer__socials">
+            <span class="footer__title">Мы в соц. сетях:</span>
+            <ul class="footer__socials-list">
+                <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#" >
+                    <img class="footer__socials-icon" src="assets/svg/insta.svg" alt="" width="24" height="24">
+                </a>
+                </li>
+                <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#" >
+                    <img class="footer__socials-icon" src="assets/svg/ok.svg" alt="" width="24" height="23">
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer__copyright">
+        <div class="container">
+        <div class="footer__copyright-content">
+            <span class="footer__copyright-text">
+            © 2022, Oblivion
+            </span>
+        </div>
+        </div>
+    </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="assets/libs/slick/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>    
