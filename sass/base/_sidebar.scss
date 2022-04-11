@@ -5,7 +5,8 @@
     margin: 0 auto;
     padding-top: 41px;
 }
-.sidebar{    
+.sidebar{
+    padding-bottom: 41px;    
     &__categories{
         width: 278px;
         height: auto;
@@ -13,7 +14,7 @@
         li{
             list-style: none;
             border-bottom: 1px solid #E8E8E8;
-            padding: 19px 16px;
+            padding: 17px 16px;
             a{
                 font-style: normal;
                 font-weight: 300;
