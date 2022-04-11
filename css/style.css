@@ -533,6 +533,7 @@ Gotham Pro
 }
 
 .products__img {
+  position: relative;
   width: 277px;
   height: 213px;
   margin-bottom: 13px;
@@ -645,7 +646,7 @@ Gotham Pro
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  max-width: 414px;
+  max-width: 575px;
   text-align: center;
   margin: 0 auto;
 }
