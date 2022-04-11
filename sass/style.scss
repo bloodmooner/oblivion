@@ -9,6 +9,15 @@
 @import 'base/market';
 
 
+@import 'base/header';
+@import 'base/header-mobile';
+@import 'base/header-search';
+@import 'base/footer';
+@import 'base/item';
+@import 'base/related';
+@import 'base/cart';
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 /*
@@ -82,72 +91,4 @@ button:active, button:focus {
 button::-moz-focus-inner {
   border: 0;
 }
-
-.header {
-
-  &__wrapper {
-  }
-
-  &__logo {
-  }
-
-  &__logo-icon {
-  }
-
-  &__tel {
-  }
-
-  &__shedule {
-  }
-
-  &__delivery {
-  }
-
-  &__actions {
-  }
-
-  &__actions-item {
-
-    &_fav {
-    }
-    &_cart {
-    }
-  }
-
-  &__actions-icon {
-  }
-
-  &__actions-counter {
-  }
-
-  &__menu {
-  }
-
-  &__nav {
-  }
-
-  &__list {
-  }
-
-  &__listitem {
-  }
-
-  &__link {
-  }
-
-  &__search {
-  }
-
-  &__search-row {
-  }
-
-  &__search-input {
-  }
-
-  &__search-icon {
-  }
-}
-
-
-
 
