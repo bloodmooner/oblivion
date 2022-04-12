@@ -712,7 +712,7 @@ Gotham Pro
 
 .about {
   width: 891px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .about p {
@@ -735,7 +735,7 @@ Gotham Pro
 
 .delivery {
   width: 891px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .delivery p {
@@ -753,6 +753,43 @@ Gotham Pro
 }
 
 .delivery p:last-child {
+  margin-bottom: 0;
+}
+
+.payment {
+  width: 891px;
+  margin-bottom: 70px;
+}
+
+.payment p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 23px;
+  max-width: 863px;
+}
+
+.payment p:last-child {
+  margin-bottom: 0;
+}
+
+.payment ul {
+  padding-left: 17px;
+  margin-bottom: 23px;
+}
+
+.payment li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 7px;
+}
+
+.payment li:last-child {
   margin-bottom: 0;
 }
 
