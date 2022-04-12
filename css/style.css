@@ -475,7 +475,7 @@ Gotham Pro
   line-height: 13px;
   color: #CF8BA1;
   background: transparent;
-  padding: 15px 16px;
+  padding: 15px 18px;
   margin-right: 11px;
 }
 
@@ -491,7 +491,7 @@ Gotham Pro
   font-size: 14px;
   line-height: 13px;
   color: #ffffff;
-  padding: 15px 16px;
+  padding: 15px 23px;
 }
 
 .btn__products_cart:hover {
@@ -499,8 +499,24 @@ Gotham Pro
   color: #ffffff;
 }
 
+.btn__market {
+  display: block;
+  width: 200px;
+  height: 52px;
+  background: transparent;
+  border: 1px solid #CF8BA1;
+  margin: 0 auto;
+  margin-top: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #CF8BA1;
+}
+
 .market {
-  max-width: 891px;
+  width: 891px;
   margin-bottom: 100px;
 }
 
@@ -511,7 +527,7 @@ Gotham Pro
   font-size: 25px;
   line-height: 30px;
   color: #000000;
-  max-width: 253px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -692,6 +708,24 @@ Gotham Pro
 .category__item_title a {
   color: #000000;
   text-decoration: none;
+}
+
+.about {
+  width: 891px;
+}
+
+.about p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 42px;
+  max-width: 863px;
+}
+
+.about p span {
+  font-weight: 700;
 }
 
 .header__wrapper {
@@ -2240,7 +2274,7 @@ Gotham Pro
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 17px;
+  padding: 15px 18px;
   border: 1px solid #CF8BA1;
   background: transparent;
   font-style: normal;
@@ -2259,7 +2293,7 @@ Gotham Pro
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 15px 23px;
   background: #CF8BA1;
   font-style: normal;
   font-weight: 400;

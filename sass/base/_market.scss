@@ -1,5 +1,5 @@
 .market{
-    max-width: 891px;
+    width: 891px;
     margin-bottom: 100px; 
     &__title{
         font-family: $montserrat;
@@ -8,7 +8,7 @@
         font-size: 25px;
         line-height: 30px;
         color: #000000;
-        max-width: 253px;
+        max-width: 600px;
         margin: 0 auto;
         text-align: center;
     }  

@@ -22,7 +22,7 @@
             line-height: 13px;
             color: #CF8BA1;
             background: transparent;
-            padding: 15px 16px;
+            padding: 15px 18px;
             margin-right: 11px;
             &:hover{
                 text-decoration: none;
@@ -37,12 +37,29 @@
             font-size: 14px;
             line-height: 13px;
             color: #ffffff;
-            padding: 15px 16px;
+            padding: 15px 23px;
             &:hover{
                 text-decoration: none;
                 color: #ffffff;
             }
         }
+
+    }
+    &__market{
+        display: block;
+        width: 200px;
+        height: 52px;
+        background: transparent;
+        border: 1px solid #CF8BA1;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        font-family: $montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+        color: #CF8BA1;
 
     }
 } 
