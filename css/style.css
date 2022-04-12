@@ -721,7 +721,7 @@ Gotham Pro
   font-size: 18px;
   line-height: 28px;
   color: #323232;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   max-width: 863px;
 }
 
@@ -744,7 +744,7 @@ Gotham Pro
   font-size: 18px;
   line-height: 28px;
   color: #323232;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
   max-width: 863px;
 }
 
@@ -790,6 +790,29 @@ Gotham Pro
 }
 
 .payment li:last-child {
+  margin-bottom: 0;
+}
+
+.work {
+  width: 891px;
+  margin-bottom: 70px;
+}
+
+.work p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 23px;
+  max-width: 863px;
+}
+
+.work p span {
+  font-weight: 700;
+}
+
+.work p:last-child {
   margin-bottom: 0;
 }
 
