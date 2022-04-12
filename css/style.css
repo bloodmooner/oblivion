@@ -712,6 +712,7 @@ Gotham Pro
 
 .about {
   width: 891px;
+  margin-bottom: 60px;
 }
 
 .about p {
@@ -720,12 +721,39 @@ Gotham Pro
   font-size: 18px;
   line-height: 28px;
   color: #323232;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   max-width: 863px;
 }
 
 .about p span {
   font-weight: 700;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.delivery {
+  width: 891px;
+  margin-bottom: 60px;
+}
+
+.delivery p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 32px;
+  max-width: 863px;
+}
+
+.delivery p span {
+  font-weight: 700;
+}
+
+.delivery p:last-child {
+  margin-bottom: 0;
 }
 
 .header__wrapper {
