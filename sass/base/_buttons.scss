@@ -27,6 +27,9 @@
             @include for-tablet-portrait {
                 padding: 15px 15px;
             }
+            @include for-phone {
+                padding: 15px 18px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #CF8BA1;
@@ -43,6 +46,9 @@
             padding: 15px 23px;
             @include for-tablet-portrait {
                 padding: 15px 20px;
+            }
+            @include for-phone {
+                padding: 15px 23px;
             }
             &:hover{
                 text-decoration: none;

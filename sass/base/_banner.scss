@@ -26,6 +26,9 @@
         top:50%;
         left: 88px;
         transform: translateY(-50%);
+        @include for-phone {
+            left: 33px;
+        }
         li{
             position: relative;
             list-style: none;
@@ -37,6 +40,9 @@
             font-size: 22px;
             line-height: 21px;
             color: #FFFFFF;
+            @include for-phone {
+                font-size: 17px;
+            }
             &::before{
                 position: absolute;
                 content: "";
@@ -58,5 +64,9 @@
         font-size: 35px;
         line-height: 120%;    
         color: #FFFFFF;
+        @include for-phone {
+            max-width: 306px; 
+            font-size: 25px;
+        }
     }
 }

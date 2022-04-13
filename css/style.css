@@ -365,9 +365,10 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .wrapper {
     justify-content: center;
+    padding: 41px 0 0;
   }
 }
 
@@ -377,7 +378,7 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .wrapper main {
     max-width: 100%;
   }
@@ -393,7 +394,7 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .sidebar {
     display: none;
   }
@@ -470,6 +471,12 @@ Gotham Pro
   transform: translateY(-50%);
 }
 
+@media (max-width: 575px) {
+  .banner__wrapper {
+    left: 33px;
+  }
+}
+
 .banner__wrapper li {
   position: relative;
   list-style: none;
@@ -480,6 +487,12 @@ Gotham Pro
   font-size: 22px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+@media (max-width: 575px) {
+  .banner__wrapper li {
+    font-size: 17px;
+  }
 }
 
 .banner__wrapper li::before {
@@ -501,6 +514,13 @@ Gotham Pro
   font-size: 35px;
   line-height: 120%;
   color: #FFFFFF;
+}
+
+@media (max-width: 575px) {
+  .banner__title {
+    max-width: 306px;
+    font-size: 25px;
+  }
 }
 
 .btn__banner {
@@ -529,9 +549,15 @@ Gotham Pro
   margin-right: 11px;
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .btn__products_info {
     padding: 15px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn__products_info {
+    padding: 15px 18px;
   }
 }
 
@@ -550,9 +576,15 @@ Gotham Pro
   padding: 15px 23px;
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .btn__products_cart {
     padding: 15px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn__products_cart {
+    padding: 15px 23px;
   }
 }
 
@@ -588,9 +620,10 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .market {
     width: auto;
+    padding: 0 25px;
   }
 }
 
@@ -620,10 +653,22 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .products {
     max-width: 100%;
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .products {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 575px) {
+  .products {
+    justify-content: center;
   }
 }
 
@@ -639,10 +684,24 @@ Gotham Pro
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .products__item {
     margin-right: 2.7%;
     width: 31.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .products__item {
+    margin-right: 0;
+    width: 47%;
+  }
+}
+
+@media (max-width: 575px) {
+  .products__item {
+    width: 100%;
+    max-width: 300px;
   }
 }
 

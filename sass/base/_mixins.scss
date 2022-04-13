@@ -16,10 +16,10 @@
   @media (max-width: 575px) { @content; }
 }
 @mixin for-phone-portrait {
-  @media (min-width: 575px) and (max-width: 767px) { @content; }
+  @media (max-width: 767px) { @content; }
 }
 @mixin for-tablet-portrait {
-  @media (min-width: 767px) and (max-width: 991px) { @content; }
+  @media (max-width: 991px) { @content; }
 }
 @mixin for-tablet-landscape {
   @media (max-width: 1200px) { @content; }

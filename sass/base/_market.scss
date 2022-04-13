@@ -6,6 +6,7 @@
     } 
     @include for-tablet-portrait {
         width: auto;
+        padding: 0 25px;
     } 
     &__title{
         font-family: $montserrat;
@@ -31,7 +32,13 @@
     @include for-tablet-portrait {
         max-width: 100%;
         justify-content: flex-start;
+    }
+    @include for-phone-portrait {
+        justify-content: space-between;
     } 
+    @include for-phone {
+        justify-content: center;
+    }
     &__item {
         width: 277px;
         margin-top: 40px;
@@ -42,6 +49,14 @@
         @include for-tablet-portrait {
             margin-right: 2.7%;
             width: 31.5%;
+        }
+        @include for-phone-portrait {
+            margin-right: 0;
+            width: 47%;
+        }
+        @include for-phone {
+            width: 100%;
+            max-width: 300px;
         }
         &:nth-child(3n){
             margin-right: 0;
