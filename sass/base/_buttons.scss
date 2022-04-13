@@ -24,6 +24,9 @@
             background: transparent;
             padding: 15px 18px;
             margin-right: 11px;
+            @include for-tablet-portrait {
+                padding: 15px 15px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #CF8BA1;
@@ -38,6 +41,9 @@
             line-height: 13px;
             color: #ffffff;
             padding: 15px 23px;
+            @include for-tablet-portrait {
+                padding: 15px 20px;
+            }
             &:hover{
                 text-decoration: none;
                 color: #ffffff;

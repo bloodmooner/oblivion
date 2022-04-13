@@ -4,13 +4,37 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 41px;
+    @include for-tablet-landscape {
+        max-width: 100%;
+        padding: 41px 25px 0;
+    } 
+    @include for-tablet-portrait {
+        justify-content: center;
+    } 
+    main{
+        @include for-tablet-landscape {
+            max-width: 72%;
+        }
+        @include for-tablet-portrait {
+            max-width: 100%;
+        }
+    }
 }
 .sidebar{
-    padding-bottom: 41px;    
+    padding-bottom: 41px; 
+    @include for-tablet-landscape {
+        width: 26%;
+    } 
+    @include for-tablet-portrait {
+        display: none;
+    }  
     &__categories{
         width: 278px;
         height: auto;
         border: 1px solid #E8E8E8;
+        @include for-tablet-landscape {
+            width: 100%;
+        }
         li{
             list-style: none;
             border-bottom: 1px solid #E8E8E8;
