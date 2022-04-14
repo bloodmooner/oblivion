@@ -12,7 +12,10 @@
         justify-content: center;
         padding: 41px 0 0;
     } 
-    main{
+    @include for-phone-portrait {
+        padding: 0;
+    } 
+    main.main{
         @include for-tablet-landscape {
             max-width: 72%;
         }

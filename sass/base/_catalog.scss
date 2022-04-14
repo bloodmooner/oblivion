@@ -12,6 +12,11 @@
     }
     &__wrapper{
         margin-top: 40px;
+        @include for-tablet-landscape-up {
+            max-width: 900px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
         ul{
             display: flex;
             flex-wrap: wrap;
@@ -24,11 +29,26 @@
         margin: 0 -1px -1px 0;
         list-style: none;
         padding: 23px 23px 0;
+        @include for-tablet-landscape-up {
+            width: calc(100%/3);
+            height: auto; 
+            min-height: 242px;       
+            padding: 23px 23px 20px;
+        }
+        @include for-phone-portrait {
+            width: calc(100%/2);
+            height: auto; 
+            min-height: 242px;       
+        }
+        @include for-phone {
+            min-height: 142px; 
+            padding: 10px 8px 20px;      
+        }
 
         img{
             display: block;
-            width: 253px;
-            height: 195px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
             margin: 0 auto;
         }
@@ -41,6 +61,11 @@
             max-width: 248px;
             margin: 0 auto;
             margin-top: 20px;
+            @include for-phone {
+                font-size: 13px;
+                line-height: 110%;
+                margin-top: 10px;     
+            }
             a{            
                 color: #000000;
                 text-decoration: none;

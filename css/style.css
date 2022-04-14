@@ -372,14 +372,20 @@ Gotham Pro
   }
 }
 
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 0;
+  }
+}
+
 @media (max-width: 1200px) {
-  .wrapper main {
+  .wrapper main.main {
     max-width: 72%;
   }
 }
 
 @media (max-width: 991px) {
-  .wrapper main {
+  .wrapper main.main {
     max-width: 100%;
   }
 }
@@ -773,6 +779,14 @@ Gotham Pro
   margin-top: 40px;
 }
 
+@media (max-width: 1249px) {
+  .catalog__wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
 .catalog__wrapper ul {
   display: flex;
   flex-wrap: wrap;
@@ -787,10 +801,34 @@ Gotham Pro
   padding: 23px 23px 0;
 }
 
+@media (max-width: 1249px) {
+  .catalog__item {
+    width: calc(100%/3);
+    height: auto;
+    min-height: 242px;
+    padding: 23px 23px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__item {
+    width: calc(100%/2);
+    height: auto;
+    min-height: 242px;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog__item {
+    min-height: 142px;
+    padding: 10px 8px 20px;
+  }
+}
+
 .catalog__item img {
   display: block;
-  width: 253px;
-  height: 195px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -804,6 +842,14 @@ Gotham Pro
   max-width: 248px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+@media (max-width: 575px) {
+  .catalog__item_title {
+    font-size: 13px;
+    line-height: 110%;
+    margin-top: 10px;
+  }
 }
 
 .catalog__item_title a {
@@ -1114,7 +1160,7 @@ Gotham Pro
   align-items: center;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__info {
     margin-left: 20px;
   }
@@ -1142,7 +1188,7 @@ Gotham Pro
   color: #1D1D1D;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__tel {
     font-size: 16px;
   }
@@ -1160,7 +1206,7 @@ Gotham Pro
   color: #1D1D1D;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__shedule {
     max-width: 226px;
     font-size: 14px;
@@ -1179,7 +1225,7 @@ Gotham Pro
   color: #1D1D1D;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__delivery {
     max-width: 194px;
     font-size: 14px;
@@ -1192,7 +1238,7 @@ Gotham Pro
   align-items: center;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__actions {
     margin-left: 15px;
   }
@@ -1241,7 +1287,7 @@ Gotham Pro
   margin-right: 9px;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__actions-item_cart {
     margin-left: 15px;
   }
@@ -1345,7 +1391,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__link {
     font-size: 14px;
   }
@@ -1374,7 +1420,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header__search-input {
     font-size: 14px;
   }
@@ -1441,7 +1487,7 @@ Gotham Pro
   width: 100%;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__nav {
     margin-left: 20px;
   }
@@ -1534,7 +1580,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__link {
     font-size: 14px;
   }
@@ -1561,7 +1607,7 @@ Gotham Pro
   justify-content: space-between;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__links {
     margin-left: 15px;
     max-width: 270px;
@@ -1611,7 +1657,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__title {
     font-size: 14px;
   }
@@ -1645,7 +1691,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__contact-tel {
     font-size: 14px;
   }
@@ -1682,7 +1728,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .header-mobile__contact-days {
     font-size: 14px;
   }
@@ -1917,7 +1963,7 @@ Gotham Pro
   width: 100%;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .footer__nav {
     margin-left: 20px;
   }
@@ -2010,7 +2056,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .footer__link {
     font-size: 14px;
   }
@@ -2037,7 +2083,7 @@ Gotham Pro
   justify-content: space-between;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .footer__links {
     margin-left: 15px;
     max-width: 270px;
@@ -2085,7 +2131,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .footer__title {
     font-size: 14px;
   }
@@ -2119,7 +2165,7 @@ Gotham Pro
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .footer__contact-tel {
     font-size: 14px;
   }
@@ -2434,7 +2480,7 @@ Gotham Pro
   }
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__content {
     max-width: 100%;
     padding: 0 45px;
@@ -2474,7 +2520,7 @@ Gotham Pro
   width: 100%;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__item {
     max-width: 100%;
   }
@@ -2490,7 +2536,7 @@ Gotham Pro
   position: relative;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__img {
     width: 100%;
   }
@@ -2507,7 +2553,7 @@ Gotham Pro
   object-fit: cover;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__img-src {
     width: 100%;
   }
@@ -2616,7 +2662,7 @@ Gotham Pro
   cursor: pointer;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__arrow_left {
     left: -4px;
   }
@@ -2641,7 +2687,7 @@ Gotham Pro
   cursor: pointer;
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .related__arrow_right {
     right: -4px;
   }
@@ -2973,11 +3019,10 @@ section, header, footer {
 @media (min-width: 1250px) and (max-width: 1400px) {
   .container {
     max-width: 100%;
-    padding: 0 50px;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1249px) {
+@media (max-width: 1249px) {
   .container {
     max-width: 100%;
     padding: 0 45px;

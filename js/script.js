@@ -58,7 +58,15 @@ $(document).ready(function(){
                   dots: false,
                   arrows: true
                 }
-            }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: 2,
+                  dots: false,
+                  arrows: true
+                }
+            },
           
           
         ]

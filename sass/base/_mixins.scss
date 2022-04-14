@@ -5,7 +5,7 @@
   @media (min-width: 600px) and (max-width: 899px) { @content; }
 }
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) and (max-width: 1249px) { @content; }
+  @media (max-width: 1249px) { @content; }
 }
 @mixin for-desktop {
   @media (min-width: 1250px) and (max-width: 1400px) { @content; }
@@ -25,5 +25,5 @@
   @media (max-width: 1200px) { @content; }
 }
 @mixin for-desk {
-  @media (min-width: 1200px) and (max-width: 1400px) { @content; }
+  @media (max-width: 1400px) { @content; }
 }
