@@ -18,25 +18,30 @@
     &__wrapper {
         padding: 38px 0 25px 0;
         display: flex;
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
             padding: 0;
             flex-direction: column;
             align-items: center;
             margin: 0 auto;
         }
-        @include for-phone-only {
+        @include for-mobile-landscape {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+        }
+        @include for-phone {
             padding: 0;
             flex-direction: column;
             align-items: center;
             margin: 0 auto;
         }
+        
     }
 
     &__logo-link {
     }
 
     &__logo-icon {
-        @include for-phone-only {
+        @include for-phone {
             width: 87px;
         }
     }
@@ -46,14 +51,7 @@
         margin-top: 16px;
         max-width: 636px;
         width: 100%;
-        @include for-tablet-landscape-up {
-            margin-left: 20px;
-        }
-        @include for-tablet-portrait-up {
-            margin-left: 0;
-            margin-top: 5px;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             margin-left: 0;
             margin-top: 5px;
         }
@@ -63,26 +61,22 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        @include for-tablet-portrait-up {
-            flex-direction: column;
-            align-items: center;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             flex-direction: column;
             align-items: center;
         }
     }
 
     &__item {
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
             margin-bottom: 18px;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-bottom: 17px;
         }
         &_header {
             display: none;
-            @include for-tablet-portrait-up {
+            @include for-tablet-portrait {
                 display: block;
                 font-family: $montserrat;
                 font-style: normal;
@@ -91,15 +85,9 @@
                 line-height: 27px;
                 color: #FFFFFF;
             }
-            @include for-phone-only {
-                display: block;
-                font-family: $montserrat;
-                font-style: normal;
-                font-weight: 500;
+            @include for-phone {
                 font-size: 17px;
-                line-height: 27px;
-                color: #FFFFFF;
-            }
+            }    
         }
     }
 
@@ -113,13 +101,8 @@
         &:hover {
             color: #FFFFFF;
         }
-        @include for-tablet-landscape-up {
+        @include for-tablet-portrait {
             font-size: 14px;
-        }
-        @include for-tablet-portrait-up {
-            font-weight: 400;
-        }
-        @include for-phone-only {
             font-weight: 400;
         }
     }
@@ -131,17 +114,11 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             margin-left: 15px;
             max-width: 270px;   
         }
-        @include for-tablet-portrait-up {
-            margin-left: 0;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 30px;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             margin-left: 0;
             flex-direction: column;
             align-items: center;
@@ -150,12 +127,7 @@
     }
 
     &__contact {
-        @include for-tablet-portrait-up {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -169,13 +141,10 @@
         font-size: 15px;
         line-height: 18px;
         color: #FFFFFF;
-        @include for-tablet-landscape-up {
-            font-size: 14px;
-        }
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
             font-size: 22px;
         }
-        @include for-phone-only {
+        @include for-phone {
             font-size: 17px;
             font-weight: 600;
         }
@@ -193,17 +162,12 @@
         &:hover {
             color: #FFFFFF;
         }
-        @include for-tablet-landscape-up {
-            font-size: 14px;   
-        }
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
             margin-top: 10px;
             font-weight: 400;
             font-size: 18px;
         }
-        @include for-phone-only {
-            margin-top: 10px;
-            font-weight: 400;
+        @include for-phone {
             font-size: 15px;
         }
     }
@@ -220,26 +184,18 @@
         &:hover {
             color: #FFFFFF;
         }
-        @include for-tablet-landscape-up {
-            font-size: 14px;   
-        }
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
             margin-top: 10px;
             font-weight: 400;
             font-size: 18px;
         }
-        @include for-phone-only {
-            margin-top: 10px;
-            font-weight: 400;
+        @include for-phone {
             font-size: 15px;
         }
     }
 
     &__socials {
-        @include for-tablet-portrait-up {
-            margin-top: 0;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             margin-top: 0;
         }
     }
@@ -249,11 +205,7 @@
         list-style-type: none;
         display: flex;
         column-gap: 20px;
-        @include for-tablet-portrait-up {
-            margin-top: 10px;
-            justify-content: center;
-        }
-        @include for-phone-only {
+        @include for-tablet-portrait {
             margin-top: 10px;
             justify-content: center;
         }
@@ -285,10 +237,10 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             font-size: 16px;
         }
-        @include for-phone-only {
+        @include for-phone {
             font-size: 14px;
         }
     }

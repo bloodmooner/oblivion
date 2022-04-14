@@ -46,8 +46,8 @@ $(document).ready(function(){
     $('.related__wrapper').slick({
         slidesToShow: 4,
         arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        /* autoplay: true,
+        autoplaySpeed: 3000, */
         nextArrow: $(document).find('.related__arrow_right'),
         prevArrow: $(document).find('.related__arrow_left'),
         responsive: [

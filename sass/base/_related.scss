@@ -1,6 +1,10 @@
 .related {
     margin-top: 100px;
     margin-bottom: 100px;
+    @include for-phone-portrait {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     &_cart {
         margin-top: 100px;
     }
@@ -11,19 +15,19 @@
         margin: 0 auto;
         position: relative;
       
-        @include for-desktop {
+        @include for-desk {
           max-width: 100%;
           padding: 0 50px;
         }
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
           max-width: 100%;
           padding: 0 45px;
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
           max-width: 100%;
           padding: 0 36px;
         }
-        @include for-phone-only {
+        @include for-phone {
           max-width: 100%;
           padding: 0 16px;
         }
@@ -32,6 +36,9 @@
 
     &__title {
         margin-bottom: 40px;
+        @include for-phone-portrait {
+            margin-bottom: 20px;
+        }
         .title__content {
             font-family: $montserrat;
             font-style: normal;
@@ -40,6 +47,10 @@
             line-height: 30px;
             color: #000000;
             text-align: center;
+            @include for-phone-portrait {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
 
@@ -55,20 +66,23 @@
     &__item {
         max-width: 273px;
         width: 100%;
-        @include for-tablet-landscape-up {
+        @include for-desk {
             max-width: 100%;
         }
-        @include for-tablet-portrait-up {
+        @include for-tablet-landscape {
+            max-width: 100%;
+        }
+        @include for-phone-portrait {
             max-width: 100%;
         }
     }
 
     &__img {
         position: relative;
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             width: 100%;
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             width: 100%;
         }
     }
@@ -76,10 +90,7 @@
     &__img-src {
         max-height: 213px;
         object-fit: cover;
-        @include for-tablet-landscape-up {
-            width: 100%;
-        }
-        @include for-tablet-portrait-up {
+        @include for-desk {
             width: 100%;
         }
     }
@@ -185,13 +196,13 @@
             top: 57%;
             left: -69px;
             cursor: pointer;
-            @include for-tablet-landscape-up {
+            @include for-tablet-landscape {
                 left: -4px;
             }
-            @include for-tablet-portrait-up {
+            @include for-phone-portrait {
                 display: none;
             }
-            @include for-phone-only {
+            @include for-phone {
                 display: none;
             }
         }
@@ -201,13 +212,13 @@
             top: 57%;
             right: -69px;
             cursor: pointer;
-            @include for-tablet-landscape-up {
+            @include for-tablet-landscape {
                 right: -4px;
             }
-            @include for-tablet-portrait-up {
+            @include for-phone-portrait {
             display: none;
             }
-            @include for-phone-only {
+            @include for-phone {
             display: none;
             }
         }

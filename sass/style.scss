@@ -75,8 +75,10 @@ section, header, footer {
   position: relative;
 
   @include for-desktop {
-    max-width: 100%;
+    max-width: 1200px;
   }
+
+
   @include for-tablet-landscape-up {
     max-width: 100%;
     padding: 0 45px;

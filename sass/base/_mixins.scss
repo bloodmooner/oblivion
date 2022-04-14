@@ -12,6 +12,8 @@
 }
 
 
+
+
 @mixin for-phone {
   @media (max-width: 575px) { @content; }
 }
@@ -20,6 +22,9 @@
 }
 @mixin for-tablet-portrait {
   @media (max-width: 991px) { @content; }
+}
+@mixin for-mobile-landscape {
+  @media (max-width: 991px) and (orientation: landscape) { @content; }
 }
 @mixin for-tablet-landscape {
   @media (max-width: 1200px) { @content; }

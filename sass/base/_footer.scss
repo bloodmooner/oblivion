@@ -3,12 +3,15 @@
     &__wrapper {
         padding: 38px 0 25px 0;
         display: flex;
-        @include for-tablet-portrait-up {
+        @include for-tablet-landscape {
+            justify-content: space-between;
+        }
+        @include for-phone-portrait {
             padding: 23px 0 30px 0;
             flex-direction: column;
             align-items: center;
         }
-        @include for-phone-only {
+        @include for-phone {
             padding: 23px 0 30px 0;
             flex-direction: column;
             align-items: center;
@@ -16,10 +19,16 @@
     }
 
     &__logo-link {
+        @include for-tablet-landscape {
+            width: 102px;
+        }
     }
 
     &__logo-icon {
-        @include for-phone-only {
+        @include for-tablet-landscape {
+            width: 100%;
+        }
+        @include for-phone {
             width: 87px;
         }
     }
@@ -29,14 +38,18 @@
         margin-top: 16px;
         max-width: 636px;
         width: 100%;
-        @include for-tablet-landscape-up {
-            margin-left: 20px;
+        @include for-tablet-landscape {
+            margin-left: 10px;
+            max-width: 470px;
         }
-        @include for-tablet-portrait-up {
+        @include for-tablet-portrait {
+            max-width: 335px;
+        }
+        @include for-phone-portrait {
             margin-left: 0;
             margin-top: 40px;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-left: 0;
             margin-top: 30px;
         }
@@ -46,26 +59,32 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        @include for-tablet-portrait-up {
+        @include for-tablet-landscape {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 9px;
+        }
+        @include for-phone-portrait {
+            display: flex;
             flex-direction: column;
             align-items: center;
         }
-        @include for-phone-only {
+        @include for-phone {
             flex-direction: column;
             align-items: center;
         }
     }
 
     &__item {
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             margin-bottom: 18px;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-bottom: 17px;
         }
         &_header {
             display: none;
-            @include for-tablet-portrait-up {
+            @include for-phone-portrait {
                 display: block;
                 font-family: $montserrat;
                 font-style: normal;
@@ -74,7 +93,7 @@
                 line-height: 27px;
                 color: #FFFFFF;
             }
-            @include for-phone-only {
+            @include for-phone {
                 display: block;
                 font-family: $montserrat;
                 font-style: normal;
@@ -96,13 +115,13 @@
         &:hover {
             color: #FFFFFF;
         }
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             font-size: 14px;
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             font-weight: 400;
         }
-        @include for-phone-only {
+        @include for-phone {
             font-weight: 400;
         }
     }
@@ -114,16 +133,16 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             margin-left: 15px;
             max-width: 270px;   
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             margin-left: 0;
             flex-direction: column;
             align-items: center;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-left: 0;
             flex-direction: column;
             align-items: center;
@@ -131,12 +150,12 @@
     }
 
     &__contact {
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        @include for-phone-only {
+        @include for-phone {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -150,13 +169,13 @@
         font-size: 15px;
         line-height: 18px;
         color: #FFFFFF;
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             font-size: 14px;
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             font-size: 22px;
         }
-        @include for-phone-only {
+        @include for-phone {
             font-size: 17px;
             font-weight: 600;
         }
@@ -174,15 +193,15 @@
         &:hover {
             color: #FFFFFF;
         }
-        @include for-tablet-landscape-up {
+        @include for-tablet-landscape {
             font-size: 14px;   
         }
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             margin-top: 10px;
             font-weight: 400;
             font-size: 18px;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-top: 10px;
             font-weight: 400;
             font-size: 15px;
@@ -190,10 +209,10 @@
     }
 
     &__socials {
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             margin-top: 30px;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-top: 30px;
         }
     }
@@ -203,11 +222,11 @@
         list-style-type: none;
         display: flex;
         column-gap: 20px;
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             margin-top: 10px;
             justify-content: center;
         }
-        @include for-phone-only {
+        @include for-phone {
             margin-top: 10px;
             justify-content: center;
         }
@@ -239,10 +258,10 @@
         font-size: 14px;
         line-height: 17px;
         color: #FFFFFF;
-        @include for-tablet-portrait-up {
+        @include for-phone-portrait {
             font-size: 16px;
         }
-        @include for-phone-only {
+        @include for-phone {
             font-size: 14px;
         }
     }
