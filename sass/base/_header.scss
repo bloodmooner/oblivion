@@ -270,7 +270,7 @@
     &__search-row {
       position: relative;
       width: 263px;
-      @include for-tablet-landscape {
+      @include for-desk {
         width: 100%;
       }
     }

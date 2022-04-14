@@ -1496,7 +1496,7 @@ Gotham Pro
   width: 263px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .header__search-row {
     width: 100%;
   }
