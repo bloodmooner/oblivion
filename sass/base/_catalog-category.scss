@@ -1,5 +1,11 @@
 .category {
     width: 898px;
+    @include for-tablet-landscape {
+        max-width: 100%;
+    }
+    @include for-tablet-portrait {
+        padding: 0 25px;
+    }
 
     &__title{
         font-family: $montserrat;
@@ -11,10 +17,20 @@
         max-width: 575px;
         text-align: center;
         margin: 0 auto;
+        @include for-tablet-portrait {
+            font-size: 22px;
+        }
     }
     &__wrapper{
         margin-top: 40px;
         margin-bottom: 100px;
+        @include for-tablet-landscape {
+            max-width: 720px;
+            margin: 40px auto 100px;
+        }
+        @include for-tablet-portrait {
+            max-width: 760px;
+        }
         ul{
             display: flex;
             flex-wrap: wrap;
@@ -27,6 +43,14 @@
         margin: 0 -1px -1px 0;
         list-style: none;
         padding: 23px 23px 0;
+        @include for-tablet-landscape {
+            width: calc(100%/2);
+            height: auto;        
+            padding: 23px 23px;
+        }
+        @include for-phone {
+            padding: 10px 8px 15px;
+        }
 
         img{
             display: block;
@@ -34,6 +58,10 @@
             height: 195px;
             object-fit: cover;
             margin: 0 auto;
+            @include for-tablet-landscape {
+                width: 100%;
+                height: auto;
+            }
         }
         &_title{            
             font-style: normal;
@@ -44,6 +72,11 @@
             max-width: 248px;
             margin: 0 auto;
             margin-top: 20px;
+            @include for-phone {
+                font-size: 13px;
+                line-height: 110%;
+                margin-top: 10px;     
+            }
             a{            
                 color: #000000;
                 text-decoration: none;

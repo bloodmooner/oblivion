@@ -9,11 +9,12 @@
         color: #000000;
         max-width: 414px;
         margin: 0 auto;
+        text-align: center;
     }
     &__wrapper{
         margin-top: 40px;
         @include for-tablet-landscape-up {
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
             margin-top: 40px;
         }
@@ -42,7 +43,7 @@
         }
         @include for-phone {
             min-height: 142px; 
-            padding: 10px 8px 20px;      
+            padding: 10px 8px 15px;      
         }
 
         img{

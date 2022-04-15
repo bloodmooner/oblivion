@@ -1,6 +1,12 @@
 .delivery{
     width: 891px;
     margin-bottom: 70px;
+    @include for-tablet-landscape {
+        max-width: 100%;
+    }
+    @include for-tablet-portrait {
+        padding: 0 25px;
+    }
     p{
         font-style: normal;
         font-weight: 400;
