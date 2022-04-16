@@ -60,14 +60,22 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 720,
                 settings: {
                   slidesToShow: 2,
                   dots: false,
                   arrows: true
                 }
             },
-          
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 2,
+                variableWidth: true,
+                dots: false,
+                arrows: false
+              }
+          },
           
         ]
       });

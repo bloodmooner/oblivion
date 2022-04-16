@@ -29,7 +29,8 @@
         }
         @include for-phone {
           max-width: 100%;
-          padding: 0 16px;
+          padding: 0 0 0 16px;
+          overflow-x: hidden;
         }
       }
 
@@ -47,7 +48,7 @@
             line-height: 30px;
             color: #000000;
             text-align: center;
-            @include for-phone-portrait {
+            @include for-tablet-portrait {
                 font-size: 20px;
                 line-height: 24px;
             }
@@ -55,6 +56,9 @@
     }
 
     &__container {
+        @include for-phone {
+            padding-left: 8px;
+        }
     }
 
     &__wrapper {
@@ -93,6 +97,9 @@
         @include for-desk {
             width: 100%;
         }
+        @include for-tablet-portrait {
+            max-height: 163px;
+        }
     }
 
     &__img-btn {
@@ -107,9 +114,17 @@
         border-radius: 100%;
         border: none;
         background: rgba(255, 255, 255, 0.78);
+        @include for-tablet-portrait {
+            width: 31px;
+            height: 31px;
+        }
     }
 
     &__img-icon {
+        @include for-tablet-portrait {
+            width: 17px;
+            height: 15px;
+        }
     }
 
     &__caption {
@@ -122,12 +137,19 @@
         font-size: 16px;
         line-height: 15px;
         color: #2F2F2F;
+        @include for-tablet-portrait {
+            font-size: 14px;
+            line-height: 14px;
+        }
     }
 
     &__price {
         margin-top: 17px;
         display: flex;
         align-items: center;
+        @include for-tablet-portrait {
+            margin-top: 15px;
+        }
     }
 
     &__price-new {
@@ -136,6 +158,10 @@
         font-size: 18px;
         line-height: 17px;
         color: #000000;
+        @include for-tablet-portrait {
+            font-size: 16px;
+            line-height: 15px;
+        }
     }
 
     &__price-old {
@@ -146,12 +172,19 @@
         line-height: 17px;
         text-decoration-line: line-through;
         color: #888888;
+        @include for-tablet-portrait {
+            font-size: 16px;
+            line-height: 15px;
+        }
     }
 
     &__btns {
         margin-top: 21px;
         display: flex;
         column-gap: 11px;
+        @include for-tablet-portrait {
+            margin-top: 10px;
+        }
     }
 
     &__more {
@@ -170,6 +203,11 @@
             color: #CF8BA1;
             text-decoration: none; 
         }
+        @include for-tablet-portrait {
+            font-size: 12px;
+            line-height: 11px;
+            padding: 13px;
+        }
     }
 
     &__cart {
@@ -187,21 +225,40 @@
             color: #FFFFFF;
             text-decoration: none; 
         }
+        @include for-tablet-portrait {
+            font-size: 12px;
+            line-height: 11px;
+            padding: 13px 17px;
+        }
     }
 
     &__arrow {
-
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.14);
+        border-radius: 100%;
+        @include for-tablet-portrait {
+            background: transparent;
+            box-shadow: none;
+            width: 9px;
+            height: 17px;
+        }
         &_left {
             position: absolute;
-            top: 57%;
+            top: 48%;
             left: -69px;
             cursor: pointer;
             @include for-tablet-landscape {
                 left: -4px;
             }
-            @include for-phone-portrait {
-                display: none;
+            @include for-tablet-portrait {
+                left: 15px;
             }
+            
             @include for-phone {
                 display: none;
             }
@@ -209,18 +266,27 @@
 
         &_right {
             position: absolute;
-            top: 57%;
+            top: 48%;
             right: -69px;
             cursor: pointer;
             @include for-tablet-landscape {
                 right: -4px;
             }
-            @include for-phone-portrait {
-            display: none;
+            @include for-tablet-portrait {
+                right: 15px;
             }
             @include for-phone {
             display: none;
             }
+        }
+    }
+    &__arrow-icon {
+        
+        &_left {
+
+        }
+        &_right {
+
         }
     }
 }
