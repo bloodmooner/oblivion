@@ -67,12 +67,6 @@
         }
     }
 
-    &__wrapper {
-    }
-
-    &__slide {
-    }
-
     &__item {
         max-width: 273px;
         width: 100%;
@@ -131,9 +125,6 @@
             width: 17px;
             height: 15px;
         }
-    }
-
-    &__caption {
     }
 
     &__name {
@@ -284,15 +275,6 @@
             @include for-phone {
             display: none;
             }
-        }
-    }
-    &__arrow-icon {
-        
-        &_left {
-
-        }
-        &_right {
-
         }
     }
 }

@@ -8,8 +8,7 @@
     }
 
     &__table {
-        width: 100%;
-        
+        width: 100%;   
     }
 
     &__title {
@@ -161,9 +160,6 @@
             right: 7px;
             bottom: 7px;
         }
-    }
-
-    &__image-icon {
     }
 
     &__caption {
@@ -321,10 +317,6 @@
         @include for-phone-portrait {
             margin-top: 14px;
         }
-    }
-
-    &__quant {
-        
     }
 
     &__quant-minus, &__quant-plus {
@@ -508,8 +500,6 @@
         margin-top: 22px;
         justify-content: initial;
     }
-    &__container {
-    }
 
     &__wrapper {
         display: flex;
@@ -530,9 +520,6 @@
             font-size: 16px;
             line-height: 15px;
         }
-    }
-
-    &__sum {
     }
 
     &__btn {
