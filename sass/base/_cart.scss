@@ -22,6 +22,9 @@
         &_amount {
             text-align: right;
         }
+        @include for-tablet-landscape {
+            display: none;
+        }
     }
 
     &__item {
@@ -30,6 +33,19 @@
         display: grid;
         grid-template-columns: 568px 1fr;
         border-bottom: 1px solid #EBEBEB;
+        @include for-tablet-landscape {
+            grid-template-columns: 1fr;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        &:nth-child(1) {
+            @include for-tablet-landscape {
+                border-bottom: none;
+            }
+            @include for-phone {
+                display: none;
+            }
+        }
     }
 
     &__header {
@@ -41,6 +57,10 @@
     &__body-container {
         display: flex;
         justify-content: flex-end;
+        @include for-tablet-landscape {
+            display: grid;
+            grid-template-columns: 279px 1fr;
+        }
     }
 
     &__body {
@@ -48,11 +68,28 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @include for-tablet-landscape {
+            display: none;
+            grid-template-columns: 1fr;
+        }
+        &_mobile {
+            display: none;
+            @include for-tablet-landscape {
+                margin-top: 28px;
+                display: grid;
+            }
+        }
     }
 
     &__descr {
         display: flex;
-        
+        @include for-tablet-landscape {
+            display: grid;
+            grid-template-columns: 279px 1fr;
+        }
+        @include for-phone-portrait {
+            grid-template-columns: 158px 1fr;
+        }
     }
 
     &__image {
@@ -61,6 +98,14 @@
         max-height: 157px;
         width: 100%;
         height: 100%;
+        @include for-tablet-landscape {
+            max-width: 279px;
+            max-height: 214px;
+        }
+        @include for-phone-portrait {
+            max-width: 158px;
+            max-height: 122px;
+        }
     }
 
     &__image-scr {
@@ -88,6 +133,12 @@
 
     &__caption {
         margin-left: 32px;
+        @include for-tablet-landscape {
+            margin-left: 42px;
+        }
+        @include for-phone-portrait {
+            margin-left: 14px;
+        }
     }
 
     &__name {
@@ -98,16 +149,41 @@
         font-size: 16px;
         line-height: 15px;
         color: #000000;
+        @include for-tablet-landscape {
+            margin-bottom: 15px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        @include for-phone-portrait {
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 13px;
+        }
     }
 
     &__list {
         list-style-type: none;
+        @include for-phone {
+            display: none;
+        }
+        &_mobile {
+            display: none;
+            @include for-phone {
+                display: block;
+            }
+        }
     }
 
     &__listitem {
         margin-bottom: 17px;
         display: flex;
         justify-content: space-between;
+        @include for-tablet-landscape {
+            margin-bottom: 12px;
+        }
+        @include for-phone-portrait {
+            margin-top: 13px;
+        }
     }
 
     &__listitem-key {
@@ -119,6 +195,14 @@
         color: #515151;
         max-width: 132px;
         width: 100%;
+        @include for-tablet-landscape {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        @include for-phone-portrait {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__listitem-value {
@@ -129,6 +213,14 @@
         line-height: 17px;
         color: #515151;
         width: 276px;
+        @include for-tablet-landscape {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        @include for-phone-portrait {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__price {
@@ -144,6 +236,13 @@
         font-size: 18px;
         line-height: 17px;
         color: #000000;
+        @include for-tablet-landscape {
+            margin-top: 0;
+        }
+        @include for-phone-portrait {
+            font-size: 14px;
+            line-height: 13px;
+        }
     }
 
     &__oldprice {
@@ -153,13 +252,26 @@
         line-height: 17px;
         text-decoration-line: line-through;
         color: #888888;
-
+        @include for-tablet-landscape {
+            margin-top: 8px;
+        }
+        @include for-phone-portrait {
+            margin-top: 0px;
+            font-size: 14px;
+            line-height: 13px;
+        }
     }
 
     &__quant-container {
         margin-top: 7px;
         display: flex;
         align-items: center;
+        @include for-tablet-landscape {
+            margin-top: 21px;
+        }
+        @include for-phone-portrait {
+            margin-top: 14px;
+        }
     }
 
     &__quant {
@@ -176,22 +288,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include for-phone-portrait {
+            width: 35px;
+            height: 35px;
+        }
     }
 
     &__quant-minus {
         margin-right: 12px;
+        @include for-phone-portrait {
+            margin-right: 8px;
+        }
     }
 
     &__quant-plus {
         margin-left: 12px;
+        @include for-phone-portrait {
+            margin-left: 8px;
+        }
     }
 
     &__quant-icon {
 
         &_minus {
+            @include for-phone-portrait {
+                width: 16px;
+                height: 1px;
+            }
         }
 
         &_plus {
+            @include for-phone-portrait {
+                width: 13px;
+                height: 13px;
+            }
         }
     }
 
@@ -207,6 +337,10 @@
         width: 20px;
         border: none;
         background: transparent;
+        @include for-phone-portrait {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     &__amount {
@@ -223,9 +357,23 @@
         font-size: 18px;
         line-height: 17px;
         color: #000000;
+        @include for-tablet-landscape {
+            font-size: 20px;
+            line-height: 19px;
+        }
+        @include for-phone-portrait {
+            font-size: 16px;
+            line-height: 15px;
+        }
     }
 
     &__remove-container {
+        &_mobile {
+            display: none;
+            @include for-tablet-landscape {
+                display: block;
+            }
+        }
     }
 
     &__remove-btn {
@@ -234,8 +382,15 @@
         font-size: 16px;
         line-height: 15px;
         text-decoration-line: underline;
-
         color: #000000;
+        @include for-tablet-landscape {
+            display: block;
+            margin-top: 15px;  
+        }
+        @include for-phone-portrait {
+            font-size: 14px;
+            line-height: 13px;
+        }
     }
 }
 
@@ -250,6 +405,13 @@
     margin-top: 40px;
     display: flex;
     justify-content: flex-end;
+    @include for-tablet-landscape {
+        margin-top: 25px;
+    }
+    @include for-phone-portrait {
+        margin-top: 22px;
+        justify-content: initial;
+    }
     &__container {
     }
 
@@ -257,6 +419,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include for-phone-portrait {
+            align-items: initial;
+        }
     }
 
     &__num {
@@ -265,7 +430,10 @@
         font-size: 22px;
         line-height: 21px;
         color: #000000;
-
+        @include for-phone-portrait {
+            font-size: 16px;
+            line-height: 15px;
+        }
     }
 
     &__sum {
@@ -273,6 +441,9 @@
 
     &__btn {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 16px 24px;
         background: #CF8BA1;
         font-family: $montserrat;
@@ -284,6 +455,17 @@
         &:hover {
             color: #FFFFFF;
             text-decoration: none;
+        }
+        @include for-tablet-landscape {
+            margin-top: 19px;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 16px 27px;
+        }
+        @include for-phone-portrait {
+            margin-top: 15px;
+            line-height: 13px;
+            padding: 14px 17px;
         }
     }
 }
