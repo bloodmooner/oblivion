@@ -2764,7 +2764,8 @@ Gotham Pro
 @media (max-width: 767px) {
   .item__image {
     max-width: 100%;
-    height: 271px;
+    height: auto;
+    max-height: 100%;
   }
 }
 
