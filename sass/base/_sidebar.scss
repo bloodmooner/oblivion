@@ -17,10 +17,10 @@
     } 
     main.main{
         @include for-tablet-landscape {
-            max-width: 72%;
+            width: 72%;
         }
         @include for-tablet-portrait {
-            max-width: 100%;
+            width: 100%;
         }
     }
 }
