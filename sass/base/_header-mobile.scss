@@ -37,8 +37,6 @@
         
     }
 
-    &__logo-link {
-    }
 
     &__logo-icon {
         @include for-phone {
@@ -102,7 +100,11 @@
             color: #FFFFFF;
         }
         @include for-tablet-portrait {
-            font-size: 14px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        @include for-phone {
+            font-size: 15px;
             font-weight: 400;
         }
     }
@@ -211,15 +213,6 @@
         }
     }
 
-    &__socials-item {
-        
-    }
-
-    &__socials-link {
-    }
-
-    &__socials-icon {
-    }
 
     &__copyright {
         border-top: 1px solid #FFFFFF;

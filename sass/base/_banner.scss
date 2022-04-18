@@ -7,6 +7,12 @@
     @include for-tablet-landscape {
         width: 100%;
     }
+    @include for-tablet-portrait {
+        margin-bottom: 50px;
+    }
+    @include for-phone {
+        margin-bottom: 30px;
+    }
     &::before{
         position: absolute;
         content: "";

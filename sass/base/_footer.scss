@@ -119,9 +119,11 @@
             font-size: 14px;
         }
         @include for-phone-portrait {
+            font-size: 18px;
             font-weight: 400;
         }
         @include for-phone {
+            font-size: 15px;
             font-weight: 400;
         }
     }
@@ -230,16 +232,6 @@
             margin-top: 10px;
             justify-content: center;
         }
-    }
-
-    &__socials-item {
-        
-    }
-
-    &__socials-link {
-    }
-
-    &__socials-icon {
     }
 
     &__copyright {

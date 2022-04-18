@@ -2,8 +2,8 @@
     margin-top: 100px;
     margin-bottom: 100px;
     @include for-phone-portrait {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     &_cart {
         margin-top: 100px;
@@ -44,7 +44,10 @@
     &__title {
         margin-bottom: 40px;
         @include for-phone-portrait {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        @include for-phone {
+            margin-bottom: 25px;
         }
         .title__content {
             font-family: $montserrat;
@@ -54,7 +57,7 @@
             line-height: 30px;
             color: #000000;
             text-align: center;
-            @include for-tablet-portrait {
+            @include for-phone {
                 font-size: 20px;
                 line-height: 24px;
             }
@@ -194,7 +197,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 13px;
+        line-height: 14px;
         color: #CF8BA1;
         &:hover {
             color: #CF8BA1;
@@ -216,7 +219,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 13px;
+        line-height: 14px;
         color: #FFFFFF;
         &:hover {
             color: #FFFFFF;
