@@ -252,6 +252,9 @@
             top: 48%;
             left: -69px;
             cursor: pointer;
+            @include for-desk {
+                left: -1px;
+            }
             @include for-tablet-landscape {
                 left: -4px;
             }
@@ -269,6 +272,9 @@
             top: 48%;
             right: -69px;
             cursor: pointer;
+            @include for-desk {
+                right: -1px;
+            }
             @include for-tablet-landscape {
                 right: -4px;
             }

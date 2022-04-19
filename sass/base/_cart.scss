@@ -25,7 +25,7 @@
             max-width: 100%;
             padding: 0 36px;
         }
-        @include for-phone-portrait {
+        @include for-phone {
             max-width: 100%;
             padding: 0 16px;
         }
@@ -111,7 +111,7 @@
             max-width: 100%;
             padding: 0 36px;
         }
-        @include for-phone-portrait {
+        @include for-phone {
             grid-template-columns: 158px 1fr;
             max-width: 100%;
             padding: 0 16px;
@@ -128,7 +128,7 @@
             max-width: 279px;
             max-height: 214px;
         }
-        @include for-phone-portrait {
+        @include for-phone {
             max-width: 158px;
             max-height: 122px;
         }
@@ -217,12 +217,12 @@
             max-width: 440px;
             width: 100%;
         }
-        @include for-phone-portrait {
+        @include for-phone {
             margin-top: 13px;
             flex-direction: column;
         }
         &:last-child {
-            @include for-phone-portrait {
+            @include for-phone {
                 margin-bottom: 0;
             }
         }
@@ -462,7 +462,7 @@
         }
         &_card {
             display: none;
-            @include for-phone-portrait {
+            @include for-tablet-landscape {
                 display: block;
             }
             @include for-phone {
@@ -492,7 +492,7 @@
         max-width: 100%;
         padding: 0 36px;
     }
-    @include for-phone-portrait {
+    @include for-phone {
         max-width: 100%;
         padding: 0 16px;
     }
