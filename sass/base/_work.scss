@@ -2,10 +2,14 @@
     width: 891px;
     margin-bottom: 70px;
     @include for-tablet-landscape {
-        max-width: 100%;
+        width: 100%;
+        margin-bottom: 50px;
     }
     @include for-tablet-portrait {
-        padding: 0 25px;
+        padding: 0 36px;
+    }
+    @include for-phone {
+        padding: 0 16px;
     }
     p{
         font-style: normal;
@@ -15,6 +19,10 @@
         color: #323232;
         margin-bottom: 23px;
         max-width: 863px;
+        @include for-phone {
+            font-size: 17px;
+            line-height: 140%;
+        }
         span{
             font-weight: 700; 
         }

@@ -79,15 +79,15 @@ section, header, footer {
   }
 
 
-  @include for-tablet-landscape-up {
+  @include for-tablet-landscape {
     max-width: 100%;
     padding: 0 45px;
   }
-  @include for-tablet-portrait-up {
+  @include for-tablet-portrait {
     max-width: 100%;
     padding: 0 36px;
   }
-  @include for-phone-only {
+  @include for-phone {
     max-width: 100%;
     padding: 0 16px;
   }

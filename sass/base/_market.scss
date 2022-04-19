@@ -3,12 +3,11 @@
     margin-bottom: 100px;
     @include for-tablet-landscape {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 70px;
     } 
     @include for-tablet-portrait {
         width: auto;
         padding: 0 36px;
-        margin-bottom: 70px;
     } 
     @include for-phone {
         padding: 0 16px;

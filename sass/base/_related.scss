@@ -1,6 +1,10 @@
 .related {
     margin-top: 100px;
     margin-bottom: 100px;
+    @include for-tablet-landscape {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
     @include for-phone-portrait {
         margin-top: 50px;
         margin-bottom: 50px;

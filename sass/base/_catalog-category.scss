@@ -4,7 +4,10 @@
         max-width: 100%;
     }
     @include for-tablet-portrait {
-        padding: 0 25px;
+        padding: 0 36px;
+    }
+    @include for-phone-only {
+        padding: 0 16px;
     }
 
     &__title{
@@ -26,10 +29,14 @@
         margin-bottom: 100px;
         @include for-tablet-landscape {
             max-width: 720px;
-            margin: 30px auto 100px;
+            margin: 30px auto 70px;
         }
         @include for-tablet-portrait {
             max-width: 760px;
+            margin: 30px auto 50px;
+        }
+        @include for-phone {
+            margin: 25px auto 50px;
         }
         ul{
             display: flex;

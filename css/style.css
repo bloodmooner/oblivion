@@ -451,11 +451,6 @@ Gotham Pro
 @media (max-width: 1200px) {
   .banner {
     width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  .banner {
     margin-bottom: 50px;
   }
 }
@@ -661,7 +656,7 @@ Gotham Pro
 @media (max-width: 1200px) {
   .market {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 }
 
@@ -669,7 +664,6 @@ Gotham Pro
   .market {
     width: auto;
     padding: 0 36px;
-    margin-bottom: 70px;
   }
 }
 
@@ -937,7 +931,13 @@ Gotham Pro
 
 @media (max-width: 991px) {
   .category {
-    padding: 0 25px;
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 599px) {
+  .category {
+    padding: 0 16px;
   }
 }
 
@@ -967,13 +967,20 @@ Gotham Pro
 @media (max-width: 1200px) {
   .category__wrapper {
     max-width: 720px;
-    margin: 30px auto 100px;
+    margin: 30px auto 70px;
   }
 }
 
 @media (max-width: 991px) {
   .category__wrapper {
     max-width: 760px;
+    margin: 30px auto 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .category__wrapper {
+    margin: 25px auto 50px;
   }
 }
 
@@ -1051,13 +1058,20 @@ Gotham Pro
 
 @media (max-width: 1200px) {
   .about {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 991px) {
   .about {
-    padding: 0 25px;
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about {
+    padding: 0 16px;
   }
 }
 
@@ -1069,6 +1083,13 @@ Gotham Pro
   color: #323232;
   margin-bottom: 30px;
   max-width: 863px;
+}
+
+@media (max-width: 575px) {
+  .about p {
+    font-size: 17px;
+    line-height: 140%;
+  }
 }
 
 .about p span {
@@ -1086,13 +1107,20 @@ Gotham Pro
 
 @media (max-width: 1200px) {
   .delivery {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 991px) {
   .delivery {
-    padding: 0 25px;
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .delivery {
+    padding: 0 16px;
   }
 }
 
@@ -1104,6 +1132,13 @@ Gotham Pro
   color: #323232;
   margin-bottom: 23px;
   max-width: 863px;
+}
+
+@media (max-width: 575px) {
+  .delivery p {
+    font-size: 17px;
+    line-height: 140%;
+  }
 }
 
 .delivery p span {
@@ -1121,13 +1156,20 @@ Gotham Pro
 
 @media (max-width: 1200px) {
   .payment {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 991px) {
   .payment {
-    padding: 0 25px;
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .payment {
+    padding: 0 16px;
   }
 }
 
@@ -1139,6 +1181,13 @@ Gotham Pro
   color: #323232;
   margin-bottom: 23px;
   max-width: 863px;
+}
+
+@media (max-width: 575px) {
+  .payment p {
+    font-size: 17px;
+    line-height: 140%;
+  }
 }
 
 .payment p:last-child {
@@ -1159,6 +1208,13 @@ Gotham Pro
   margin-bottom: 7px;
 }
 
+@media (max-width: 575px) {
+  .payment li {
+    font-size: 17px;
+    line-height: 140%;
+  }
+}
+
 .payment li:last-child {
   margin-bottom: 0;
 }
@@ -1170,13 +1226,20 @@ Gotham Pro
 
 @media (max-width: 1200px) {
   .work {
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 991px) {
   .work {
-    padding: 0 25px;
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .work {
+    padding: 0 16px;
   }
 }
 
@@ -1188,6 +1251,13 @@ Gotham Pro
   color: #323232;
   margin-bottom: 23px;
   max-width: 863px;
+}
+
+@media (max-width: 575px) {
+  .work p {
+    font-size: 17px;
+    line-height: 140%;
+  }
 }
 
 .work p span {
@@ -2853,6 +2923,13 @@ Gotham Pro
   margin-bottom: 100px;
 }
 
+@media (max-width: 1200px) {
+  .related {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 767px) {
   .related {
     margin-top: 50px;
@@ -4070,21 +4147,21 @@ section, header, footer {
   }
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 100%;
     padding: 0 45px;
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (max-width: 991px) {
   .container {
     max-width: 100%;
     padding: 0 36px;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 575px) {
   .container {
     max-width: 100%;
     padding: 0 16px;
