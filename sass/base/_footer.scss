@@ -40,7 +40,7 @@
         width: 100%;
         @include for-tablet-landscape {
             margin-left: 10px;
-            max-width: 470px;
+            max-width: 435px;
         }
         @include for-tablet-portrait {
             max-width: 335px;
@@ -137,12 +137,16 @@
         justify-content: space-between;
         @include for-tablet-landscape {
             margin-left: 15px;
-            max-width: 270px;   
+            max-width: 290px;   
+        }
+        @include for-tablet-portrait {
+            max-width: 270px;
         }
         @include for-phone-portrait {
             margin-left: 0;
             flex-direction: column;
             align-items: center;
+            
         }
         @include for-phone {
             margin-left: 0;
