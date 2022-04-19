@@ -584,19 +584,19 @@ Gotham Pro
   line-height: 100%;
   color: #CF8BA1;
   background: transparent;
-  padding: 15px 18px;
+  padding: 15px 18px 14px;
   margin-right: 11px;
 }
 
 @media (max-width: 991px) {
   .btn__products_info {
-    padding: 15px 15px;
+    padding: 15px 15px 14px;
   }
 }
 
 @media (max-width: 575px) {
   .btn__products_info {
-    padding: 15px 18px;
+    padding: 15px 18px 14px;
   }
 }
 
@@ -612,18 +612,18 @@ Gotham Pro
   font-size: 14px;
   line-height: 100%;
   color: #ffffff;
-  padding: 15px 23px;
+  padding: 15px 23px 14px;
 }
 
 @media (max-width: 991px) {
   .btn__products_cart {
-    padding: 15px 20px;
+    padding: 15px 20px 14px;
   }
 }
 
 @media (max-width: 575px) {
   .btn__products_cart {
-    padding: 15px 23px;
+    padding: 15px 23px 14px;
   }
 }
 
