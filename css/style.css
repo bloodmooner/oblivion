@@ -3385,6 +3385,13 @@ Gotham Pro
   }
 }
 
+@media (max-width: 575px) {
+  .related__item {
+    max-width: auto;
+    width: 250px;
+  }
+}
+
 .related__img {
   position: relative;
 }
@@ -3460,12 +3467,21 @@ Gotham Pro
   font-size: 16px;
   line-height: 16px;
   color: #2F2F2F;
+  height: 48px;
 }
 
 @media (max-width: 991px) {
   .related__name {
     font-size: 14px;
     line-height: 14px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .related__name {
+    height: 42px;
+    overflow: hidden;
   }
 }
 

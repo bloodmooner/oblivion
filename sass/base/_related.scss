@@ -86,6 +86,10 @@
         @include for-phone-portrait {
             max-width: 100%;
         }
+        @include for-phone {
+            max-width: auto;
+            width: 250px;
+        }
     }
 
     &__img {
@@ -141,9 +145,15 @@
         font-size: 16px;
         line-height: 16px;
         color: #2F2F2F;
+        height: 48px;
         @include for-tablet-portrait {
             font-size: 14px;
             line-height: 14px;
+            height: 56px;
+        }
+        @include for-phone-portrait {
+            height: 42px;
+            overflow: hidden;
         }
     }
 
