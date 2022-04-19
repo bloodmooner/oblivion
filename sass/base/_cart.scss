@@ -54,7 +54,10 @@
         @include for-tablet-landscape {
             grid-template-columns: 1fr;
             padding-top: 20px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
+        }
+        @include for-phone {
+            padding-bottom: 25px;
         }
         &:nth-child(1) {
             @include for-tablet-landscape {
@@ -100,7 +103,8 @@
     }
 
     &__descr {
-        display: flex;
+        display: grid;
+        grid-template-columns: 205px 1fr;
         @include for-tablet-landscape {
             display: grid;
             grid-template-columns: 279px 1fr;
@@ -115,6 +119,15 @@
             grid-template-columns: 158px 1fr;
             max-width: 100%;
             padding: 0 16px;
+        }
+    }
+
+    &__card {
+        width: 205px;
+        height: 157px;
+        @include for-phone {
+            width: auto;
+            height: auto;
         }
     }
 
@@ -218,6 +231,8 @@
 
     &__list {
         list-style-type: none;
+        max-width: 400px;
+        width: 100%;
         @include for-phone {
             display: none;
         }
@@ -459,6 +474,8 @@
             }
         }
     }
+
+    
 
     &__remove-btn {
         width: fit-content;

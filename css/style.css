@@ -3772,7 +3772,13 @@ Gotham Pro
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cart__item {
+    padding-bottom: 25px;
   }
 }
 
@@ -3841,9 +3847,10 @@ Gotham Pro
 }
 
 .cart__descr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 205px 1fr;
+      grid-template-columns: 205px 1fr;
 }
 
 @media (max-width: 1200px) {
@@ -3870,6 +3877,18 @@ Gotham Pro
         grid-template-columns: 158px 1fr;
     max-width: 100%;
     padding: 0 16px;
+  }
+}
+
+.cart__card {
+  width: 205px;
+  height: 157px;
+}
+
+@media (max-width: 575px) {
+  .cart__card {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -4023,6 +4042,8 @@ Gotham Pro
 
 .cart__list {
   list-style-type: none;
+  max-width: 400px;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
