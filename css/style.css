@@ -581,7 +581,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #CF8BA1;
   background: transparent;
   padding: 15px 18px;
@@ -610,7 +610,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #ffffff;
   padding: 15px 23px;
 }
@@ -3117,7 +3117,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 16px;
   color: #2F2F2F;
 }
 
@@ -3144,7 +3144,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 17px;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -3194,7 +3194,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #CF8BA1;
 }
 
@@ -3206,7 +3206,6 @@ Gotham Pro
 @media (max-width: 991px) {
   .related__more {
     font-size: 12px;
-    line-height: 11px;
     padding: 13px;
   }
 }
@@ -3220,7 +3219,7 @@ Gotham Pro
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 100%;
   color: #FFFFFF;
 }
 
@@ -3232,7 +3231,6 @@ Gotham Pro
 @media (max-width: 991px) {
   .related__cart {
     font-size: 12px;
-    line-height: 11px;
     padding: 13px 17px;
   }
 }

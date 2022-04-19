@@ -139,7 +139,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
-        line-height: 15px;
+        line-height: 16px;
         color: #2F2F2F;
         @include for-tablet-portrait {
             font-size: 14px;
@@ -160,7 +160,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 17px;
+        line-height: 18px;
         color: #000000;
         @include for-tablet-portrait {
             font-size: 16px;
@@ -201,7 +201,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 100%;
         color: #CF8BA1;
         &:hover {
             color: #CF8BA1;
@@ -209,7 +209,6 @@
         }
         @include for-tablet-portrait {
             font-size: 12px;
-            line-height: 11px;
             padding: 13px;
         }
     }
@@ -223,7 +222,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 100%;
         color: #FFFFFF;
         &:hover {
             color: #FFFFFF;
@@ -231,7 +230,6 @@
         }
         @include for-tablet-portrait {
             font-size: 12px;
-            line-height: 11px;
             padding: 13px 17px;
         }
     }
