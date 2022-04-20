@@ -24,10 +24,9 @@
         width: 100%;
         margin: 0 auto;
         position: relative;
-      
         @include for-desk {
           max-width: 100%;
-          padding: 0 50px;
+          padding: 0 25px;
         }
         @include for-tablet-landscape {
           max-width: 100%;
@@ -254,6 +253,12 @@
         background: rgba(255, 255, 255, 0.78);
         box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.14);
         border-radius: 100%;
+        @include for-desk {
+            background: transparent;
+            box-shadow: none;
+            width: 9px;
+            height: 17px;
+        }
         @include for-tablet-portrait {
             background: transparent;
             box-shadow: none;
@@ -266,7 +271,7 @@
             left: -69px;
             cursor: pointer;
             @include for-desk {
-                left: -1px;
+                left: 5px;
             }
             @include for-tablet-landscape {
                 left: -4px;
@@ -286,7 +291,7 @@
             right: -69px;
             cursor: pointer;
             @include for-desk {
-                right: -1px;
+                right: 5px;
             }
             @include for-tablet-landscape {
                 right: -4px;

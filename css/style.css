@@ -3317,7 +3317,7 @@ Gotham Pro
 @media (max-width: 1400px) {
   .related__content {
     max-width: 100%;
-    padding: 0 50px;
+    padding: 0 25px;
   }
 }
 
@@ -3651,6 +3651,16 @@ Gotham Pro
   border-radius: 100%;
 }
 
+@media (max-width: 1400px) {
+  .related__arrow {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 9px;
+    height: 17px;
+  }
+}
+
 @media (max-width: 991px) {
   .related__arrow {
     background: transparent;
@@ -3670,7 +3680,7 @@ Gotham Pro
 
 @media (max-width: 1400px) {
   .related__arrow_left {
-    left: -1px;
+    left: 5px;
   }
 }
 
@@ -3701,7 +3711,7 @@ Gotham Pro
 
 @media (max-width: 1400px) {
   .related__arrow_right {
-    right: -1px;
+    right: 5px;
   }
 }
 
@@ -4667,6 +4677,7 @@ section, header, footer {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding: 0 25px;
 }
 
 @media (min-width: 1250px) and (max-width: 1400px) {
