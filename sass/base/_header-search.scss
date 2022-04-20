@@ -8,13 +8,15 @@
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     opacity: 0;
     overflow-y: scroll;
-    
+    @include for-tablet-portrait {
+      display: flex;
+    }
 
     &__top{
         display: flex;

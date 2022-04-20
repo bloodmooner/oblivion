@@ -1875,9 +1875,7 @@ Gotham Pro
   width: 100vw;
   height: 100vh;
   padding: 24px 20px 44px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1890,6 +1888,14 @@ Gotham Pro
           justify-content: flex-start;
   opacity: 0;
   overflow-y: scroll;
+}
+
+@media (max-width: 991px) {
+  .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-mobile__wrapper {
@@ -2279,9 +2285,7 @@ Gotham Pro
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2294,6 +2298,14 @@ Gotham Pro
           justify-content: flex-start;
   opacity: 0;
   overflow-y: scroll;
+}
+
+@media (max-width: 991px) {
+  .header-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-search__top {
