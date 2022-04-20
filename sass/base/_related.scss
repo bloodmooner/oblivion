@@ -145,14 +145,15 @@
         font-size: 16px;
         line-height: 16px;
         color: #2F2F2F;
-        height: 48px;
+        height: 34px;
+        overflow: hidden;
         @include for-tablet-portrait {
             font-size: 14px;
             line-height: 14px;
-            height: 56px;
+            height: 30px;
         }
         @include for-phone-portrait {
-            height: 42px;
+            height: 30px;
             overflow: hidden;
         }
     }

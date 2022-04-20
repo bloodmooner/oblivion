@@ -1,7 +1,7 @@
 .footer {
     background: #CF8BA1;
     &__wrapper {
-        padding: 38px 0 25px 0;
+        padding: 25px 0 25px 0;
         display: flex;
         @include for-tablet-landscape {
             justify-content: space-between;

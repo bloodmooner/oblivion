@@ -176,6 +176,9 @@
     &__caption {
         margin-left: 32px;
         &-left {
+            @include for-phone-portrait {
+                width: 100%;
+            }
             @include for-phone {
                 max-width: 106px;
                 width: 100%;
